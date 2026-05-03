@@ -122,7 +122,7 @@ export default function Home() {
           <div className="flex gap-8 px-4 md:px-8 w-max">
             {[
               { name: "Diet", color: "#C0C0C0", desc: "Light and refreshing, zero guilt.", image: "/images/pepsi-diet.jpeg" },
-              { name: "Zero Sugar", color: "#111111", desc: "All the flavor, zero sugar.", image: null },
+              { name: "Max", color: "#1A1A1A", desc: "Maximum taste, no sugar.", image: "/images/pepsi-max.jpg" },
               { name: "Max", color: "#1B5BB5", desc: "Maximum taste, zero calories.", image: null },
               { name: "Wild Cherry", color: "#8E1624", desc: "Cherry-infused Pepsi flavor.", image: null },
             ].map((flavor, idx) => (
