@@ -121,10 +121,10 @@ export default function Home() {
         <div className="w-full overflow-x-auto pb-12 snap-x snap-mandatory scrollbar-hide">
           <div className="flex gap-8 px-4 md:px-8 w-max">
             {[
-              { name: "Original", color: "#278BF5", desc: "The bold, authentic Pepsi taste." },
-              { name: "Zero Sugar", color: "#111111", desc: "All the flavor, zero sugar." },
-              { name: "Max", color: "#1B5BB5", desc: "Maximum taste, zero calories." },
-              { name: "Wild Cherry", color: "#8E1624", desc: "Cherry-infused Pepsi flavor." },
+              { name: "Diet", color: "#C0C0C0", desc: "Light and refreshing, zero guilt.", image: "/images/pepsi-diet.jpeg" },
+              { name: "Zero Sugar", color: "#111111", desc: "All the flavor, zero sugar.", image: null },
+              { name: "Max", color: "#1B5BB5", desc: "Maximum taste, zero calories.", image: null },
+              { name: "Wild Cherry", color: "#8E1624", desc: "Cherry-infused Pepsi flavor.", image: null },
             ].map((flavor, idx) => (
               <motion.div
                 key={idx}
@@ -132,8 +132,16 @@ export default function Home() {
                 style={{ backgroundColor: flavor.color }}
                 whileHover={{ y: -10 }}
               >
-                {/* Simulated product image */}
-                <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1556881286-fc6915169721?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay group-hover:opacity-40 transition-opacity duration-500"></div>
+                {/* Product image */}
+                {flavor.image ? (
+                  <img 
+                    src={flavor.image} 
+                    alt={flavor.name} 
+                    className="absolute inset-0 w-full h-full object-contain p-8 group-hover:scale-110 transition-transform duration-500"
+                  />
+                ) : (
+                  <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1556881286-fc6915169721?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay group-hover:opacity-40 transition-opacity duration-500"></div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
                 
                 <div className="relative z-10 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
