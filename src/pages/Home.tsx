@@ -66,15 +66,12 @@ export default function Home() {
             style={{ y }}
           >
             <div className="w-full h-[400px] md:h-[500px] bg-gradient-to-b from-dp-red to-[#0A3A6B] rounded-[60px] relative shadow-2xl flex items-center justify-center overflow-hidden border border-white/10">
-              {/* Mock Can Graphic */}
-              <div className="w-40 md:w-48 h-72 md:h-80 bg-gradient-to-r from-[#1B5BB5] via-dp-red to-[#1B5BB5] rounded-3xl relative flex items-center justify-center shadow-[inset_0_10px_20px_rgba(0,0,0,0.5)] overflow-hidden">
-                <div className="absolute top-0 w-full h-8 bg-gray-300 opacity-20"></div>
-                <div className="[writing-mode:vertical-rl] rotate-180 text-white font-display font-black text-6xl opacity-10 tracking-tighter absolute left-2">PEPSI</div>
-                <div className="text-center relative z-10 drop-shadow-xl">
-                   <div className="text-5xl font-display font-black italic tracking-tighter text-white">Pepsi</div>
-                   <div className="mt-6 px-3 py-1 bg-white/20 rounded-full text-[10px] font-bold uppercase tracking-widest inline-block text-white backdrop-blur-sm border border-white/30">Original</div>
-                </div>
-              </div>
+              {/* Pepsi Can Image */}
+              <img 
+                src="/images/pepsi-can.png" 
+                alt="Pepsi Can" 
+                className="h-[320px] md:h-[420px] object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+              />
               {/* Texture highlight */}
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.15)_0%,_transparent_70%)] pointer-events-none"></div>
             </div>
