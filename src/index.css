@@ -2,12 +2,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-dp-red: #BB1E2D;
-  --color-dp-red-hover: #D42536;
-  --color-dp-dark: #1A0D0E;
-  --color-dp-black: #0F0506;
+  --color-dp-red: #278BF5;
+  --color-dp-red-hover: #4AA0F7;
+  --color-dp-dark: #0A1628;
+  --color-dp-black: #050D1A;
   --color-dp-light: #F9F9F9;
-  --color-dp-bg-text: #2A1517;
+  --color-dp-bg-text: #0F2040;
 
   --font-display: "Playfair Display", serif;
   --font-body: "Inter", sans-serif;
@@ -36,7 +36,7 @@
 }
 
 .liquid-bg {
-  background: radial-gradient(120% 100% at 50% 100%, #4A0B10 0%, #1A0D0E 100%);
+  background: radial-gradient(120% 100% at 50% 100%, #0A3A6B 0%, #0A1628 100%);
 }
 
 .marquee-track {

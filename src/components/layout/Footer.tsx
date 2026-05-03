@@ -35,16 +35,16 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <h2 className="text-4xl md:text-5xl font-display font-black tracking-tighter italic mb-6">
-              <span className="text-dp-red">Dr</span><span className="mx-1 text-white">Pepper</span>
+              <span className="text-dp-red">Pepsi</span>
             </h2>
             <p className="text-gray-400 mb-8 max-w-sm text-sm leading-relaxed">
-              Est. 1885. A unique blend of 23 signature flavors that defies explanation. It's not a cola, it's not a root beer, it's the vibe.
+              Est. 1893. The bold taste that has defined generations. Pepsi - the choice of a new generation.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-[10px] uppercase font-bold tracking-widest text-[#BB1E2D] mb-6">Explore</h3>
+            <h3 className="text-[10px] uppercase font-bold tracking-widest text-[#278BF5] mb-6">Explore</h3>
             <ul className="space-y-4 flex flex-col">
               <Link to="/flavors" className="text-gray-400 hover:text-white transition-colors uppercase text-xs tracking-widest font-semibold">Our Flavors</Link>
               <Link to="/culture" className="text-gray-400 hover:text-white transition-colors uppercase text-xs tracking-widest font-semibold">Culture Hub</Link>
@@ -55,22 +55,22 @@ export function Footer() {
 
           {/* Social */}
           <div>
-            <h3 className="text-[10px] uppercase font-bold tracking-widest text-[#BB1E2D] mb-6">Follow Us</h3>
+            <h3 className="text-[10px] uppercase font-bold tracking-widest text-[#278BF5] mb-6">Follow Us</h3>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#BB1E2D] hover:scale-110 transition-all border border-white/10 text-white">
+              <a href="https://www.instagram.com/mr1/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#278BF5] hover:scale-110 transition-all border border-white/10 text-white">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#BB1E2D] hover:scale-110 transition-all border border-white/10 text-white">
+              <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#278BF5] hover:scale-110 transition-all border border-white/10 text-white">
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#BB1E2D] hover:scale-110 transition-all border border-white/10 text-white">
+              <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#278BF5] hover:scale-110 transition-all border border-white/10 text-white">
                 <Youtube className="w-4 h-4" />
               </a>
             </div>
             <div className="mt-8">
               <h3 className="text-[10px] uppercase font-bold tracking-widest text-white mb-2">Contact</h3>
-              <a href="mailto:support@drpepper.com" className="text-gray-400 hover:text-[#BB1E2D] transition-colors text-xs font-semibold tracking-wider">
-                SUPPORT@DRPEPPER.COM
+              <a href="mailto:support@pepsi.com" className="text-gray-400 hover:text-[#278BF5] transition-colors text-xs font-semibold tracking-wider">
+                SUPPORT@PEPSI.COM
               </a>
             </div>
           </div>
@@ -78,7 +78,7 @@ export function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-600 text-[10px] font-bold tracking-widest uppercase">
-            &copy; {new Date().getFullYear()} DR PEPPER. ALL RIGHTS RESERVED.
+            &copy; {new Date().getFullYear()} PEPSI. ALL RIGHTS RESERVED.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-gray-600 hover:text-white text-[10px] font-bold tracking-widest uppercase transition-colors">Privacy Policy</a>

@@ -51,7 +51,7 @@ export function Navbar() {
         {/* Logo (Center) */}
         <Link to="/" className="flex items-center justify-center flex-1 md:absolute md:left-1/2 md:-translate-x-1/2 group">
           <h1 className="text-3xl lg:text-4xl font-display font-black tracking-tighter italic flex items-center">
-            <span className="text-dp-red group-hover:text-dp-light transition-colors">Dr</span><span className="mx-1 group-hover:text-dp-red transition-colors">Pepper</span>
+            <span className="text-dp-red group-hover:text-dp-light transition-colors">Pepsi</span>
           </h1>
         </Link>
 

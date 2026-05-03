@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "motion/react";
-import { ArrowRight, MapPin, Play } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -28,15 +28,15 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <p className="text-dp-red font-bold text-xs md:text-sm uppercase tracking-[0.3em] mb-4 md:mb-6">
-              Est. 1885 / Texas Original
+            <p className="text-[#CC0000] font-bold text-xs md:text-sm uppercase tracking-[0.3em] mb-4 md:mb-6">
+              Est. 1893 / New Generation
             </p>
             <h2 className="text-[12vw] md:text-[90px] lg:text-[110px] leading-[0.85] font-black uppercase tracking-tighter font-display italic mb-6 md:mb-10 text-white">
               THE ONE<br/>
               YOU <span className="text-dp-red">CRAVE.</span>
             </h2>
             <p className="text-base md:text-lg text-gray-400 max-w-md leading-relaxed mb-10 md:mb-12">
-              A unique blend of 23 signature flavors that defies explanation. It's not a cola, it's not a root beer, it's <span className="text-white font-bold">the vibe.</span>
+              The bold, refreshing taste that has defined generations. Pepsi - <span className="text-white font-bold">the choice of a new generation.</span>
             </p>
             
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-6 sm:space-y-0 sm:space-x-8">
@@ -65,17 +65,13 @@ export default function Home() {
             transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
             style={{ y }}
           >
-            <div className="w-full h-[400px] md:h-[500px] bg-gradient-to-b from-dp-red to-[#4A0B10] rounded-[60px] relative shadow-2xl flex items-center justify-center overflow-hidden border border-white/10">
-              {/* Mock Can Graphic */}
-              <div className="w-40 md:w-48 h-72 md:h-80 bg-gradient-to-r from-[#8B141E] via-dp-red to-[#8B141E] rounded-3xl relative flex items-center justify-center shadow-[inset_0_10px_20px_rgba(0,0,0,0.5)] overflow-hidden">
-                <div className="absolute top-0 w-full h-8 bg-gray-300 opacity-20"></div>
-                <div className="[writing-mode:vertical-rl] rotate-180 text-white font-display font-black text-6xl opacity-10 tracking-tighter absolute left-2">DR PEPPER</div>
-                <div className="text-center relative z-10 drop-shadow-xl">
-                   <div className="text-5xl font-display font-black italic tracking-tighter text-white">Dr</div>
-                   <div className="text-4xl font-display font-black italic mt-[-10px] tracking-tighter text-white">Pepper</div>
-                   <div className="mt-6 px-3 py-1 bg-white/20 rounded-full text-[10px] font-bold uppercase tracking-widest inline-block text-white backdrop-blur-sm border border-white/30">Original</div>
-                </div>
-              </div>
+            <div className="w-full h-[400px] md:h-[500px] bg-gradient-to-b from-dp-red to-[#0A3A6B] rounded-[60px] relative shadow-2xl flex items-center justify-center overflow-hidden border border-white/10">
+              {/* Pepsi Can Image */}
+              <img 
+                src="/images/pepsi-can.png" 
+                alt="Pepsi Can" 
+                className="h-[320px] md:h-[420px] object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+              />
               {/* Texture highlight */}
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.15)_0%,_transparent_70%)] pointer-events-none"></div>
             </div>
@@ -84,7 +80,7 @@ export default function Home() {
             <div className="absolute bottom-[-10px] md:bottom-[-20px] left-1/2 -translate-x-1/2 md:-translate-x-0 md:left-[-40px] w-[90%] md:w-72 bg-black/60 backdrop-blur-xl border border-white/10 p-5 rounded-3xl shadow-2xl z-20">
               <h4 className="text-[10px] font-bold uppercase tracking-widest mb-4 opacity-60 text-white">Select Variation</h4>
               <div className="grid grid-cols-4 gap-3 mb-4">
-                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#711F25] border-2 border-white flex items-center justify-center cursor-pointer shadow-lg shadow-black/50 hover:scale-110 transition-transform"></div>
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#278BF5] border-2 border-white flex items-center justify-center cursor-pointer shadow-lg shadow-black/50 hover:scale-110 transition-transform"></div>
                 <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#E9D700] border-2 border-transparent hover:border-white/50 flex items-center justify-center cursor-pointer transition-all"></div>
                 <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#111111] border-2 border-transparent hover:border-white/50 flex items-center justify-center cursor-pointer transition-all"></div>
                 <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#E5B6CE] border-2 border-transparent hover:border-white/50 flex items-center justify-center cursor-pointer transition-all"></div>
@@ -125,10 +121,9 @@ export default function Home() {
         <div className="w-full overflow-x-auto pb-12 snap-x snap-mandatory scrollbar-hide">
           <div className="flex gap-8 px-4 md:px-8 w-max">
             {[
-              { name: "Original", color: "#711F25", desc: "The bold, authentic 23-flavor blend." },
-              { name: "Zero Sugar", color: "#111111", desc: "All the flavor, zero sugar." },
-              { name: "Cherry", color: "#8E1624", desc: "A kiss of cherry to the classic blend." },
-              { name: "Cream Soda", color: "#C69C6D", desc: "Smooth cream soda finish." },
+              { name: "Diet", color: "#E8E8E8", desc: "Light and refreshing, zero guilt.", image: "/images/pepsi-diet.jpeg" },
+              { name: "Max", color: "#0D0D0D", desc: "Maximum taste, no sugar.", image: "/images/pepsi-max.jpg" },
+              { name: "Original", color: "#004B93", desc: "The bold, authentic Pepsi taste.", image: "/images/pepsi-original.png" },
             ].map((flavor, idx) => (
               <motion.div
                 key={idx}
@@ -136,8 +131,16 @@ export default function Home() {
                 style={{ backgroundColor: flavor.color }}
                 whileHover={{ y: -10 }}
               >
-                {/* Simulated product image */}
-                <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1556881286-fc6915169721?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay group-hover:opacity-40 transition-opacity duration-500"></div>
+                {/* Product image */}
+                {flavor.image ? (
+                  <img 
+                    src={flavor.image} 
+                    alt={flavor.name} 
+                    className="absolute inset-0 w-full h-full object-contain p-8 group-hover:scale-110 transition-transform duration-500"
+                  />
+                ) : (
+                  <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1556881286-fc6915169721?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay group-hover:opacity-40 transition-opacity duration-500"></div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
                 
                 <div className="relative z-10 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
@@ -160,18 +163,16 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             
-            {/* Video/Image block */}
+            {/* Video block */}
             <div className="relative aspect-[4/5] rounded-tl-[100px] rounded-br-[100px] overflow-hidden border border-white/10 group">
-              <img 
-                src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop" 
-                alt="Gaming Culture"
+              <video 
+                src="/videos/pepsi-culture.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
               />
-              <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <button className="w-20 h-20 bg-dp-red rounded-full flex items-center justify-center pl-1 hover:scale-110 transition-transform">
-                  <Play className="w-8 h-8 text-white" />
-                </button>
-              </div>
             </div>
 
             <div>
