@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "motion/react";
-import { ArrowRight, MapPin, Play } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -163,18 +163,16 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             
-            {/* Video/Image block */}
+            {/* Video block */}
             <div className="relative aspect-[4/5] rounded-tl-[100px] rounded-br-[100px] overflow-hidden border border-white/10 group">
-              <img 
-                src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop" 
-                alt="Gaming Culture"
+              <video 
+                src="/videos/pepsi-culture.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
               />
-              <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <button className="w-20 h-20 bg-dp-red rounded-full flex items-center justify-center pl-1 hover:scale-110 transition-transform">
-                  <Play className="w-8 h-8 text-white" />
-                </button>
-              </div>
             </div>
 
             <div>
