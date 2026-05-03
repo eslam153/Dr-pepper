@@ -123,7 +123,7 @@ export default function Home() {
             {[
               { name: "Diet", color: "#C0C0C0", desc: "Light and refreshing, zero guilt.", image: "/images/pepsi-diet.jpeg" },
               { name: "Max", color: "#1A1A1A", desc: "Maximum taste, no sugar.", image: "/images/pepsi-max.jpg" },
-              { name: "Max", color: "#1B5BB5", desc: "Maximum taste, zero calories.", image: null },
+              { name: "Original", color: "#004B93", desc: "The bold, authentic Pepsi taste.", image: "/images/pepsi-original.png" },
               { name: "Wild Cherry", color: "#8E1624", desc: "Cherry-infused Pepsi flavor.", image: null },
             ].map((flavor, idx) => (
               <motion.div
