@@ -28,7 +28,7 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <p className="text-dp-red font-bold text-xs md:text-sm uppercase tracking-[0.3em] mb-4 md:mb-6">
+            <p className="text-[#CC0000] font-bold text-xs md:text-sm uppercase tracking-[0.3em] mb-4 md:mb-6">
               Est. 1893 / New Generation
             </p>
             <h2 className="text-[12vw] md:text-[90px] lg:text-[110px] leading-[0.85] font-black uppercase tracking-tighter font-display italic mb-6 md:mb-10 text-white">
