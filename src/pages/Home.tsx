@@ -29,14 +29,14 @@ export default function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <p className="text-dp-red font-bold text-xs md:text-sm uppercase tracking-[0.3em] mb-4 md:mb-6">
-              Est. 1885 / Texas Original
+              Est. 1893 / New Generation
             </p>
             <h2 className="text-[12vw] md:text-[90px] lg:text-[110px] leading-[0.85] font-black uppercase tracking-tighter font-display italic mb-6 md:mb-10 text-white">
               THE ONE<br/>
               YOU <span className="text-dp-red">CRAVE.</span>
             </h2>
             <p className="text-base md:text-lg text-gray-400 max-w-md leading-relaxed mb-10 md:mb-12">
-              A unique blend of 23 signature flavors that defies explanation. It's not a cola, it's not a root beer, it's <span className="text-white font-bold">the vibe.</span>
+              The bold, refreshing taste that has defined generations. Pepsi - <span className="text-white font-bold">the choice of a new generation.</span>
             </p>
             
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-6 sm:space-y-0 sm:space-x-8">
@@ -65,14 +65,13 @@ export default function Home() {
             transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
             style={{ y }}
           >
-            <div className="w-full h-[400px] md:h-[500px] bg-gradient-to-b from-dp-red to-[#4A0B10] rounded-[60px] relative shadow-2xl flex items-center justify-center overflow-hidden border border-white/10">
+            <div className="w-full h-[400px] md:h-[500px] bg-gradient-to-b from-dp-red to-[#0A3A6B] rounded-[60px] relative shadow-2xl flex items-center justify-center overflow-hidden border border-white/10">
               {/* Mock Can Graphic */}
-              <div className="w-40 md:w-48 h-72 md:h-80 bg-gradient-to-r from-[#8B141E] via-dp-red to-[#8B141E] rounded-3xl relative flex items-center justify-center shadow-[inset_0_10px_20px_rgba(0,0,0,0.5)] overflow-hidden">
+              <div className="w-40 md:w-48 h-72 md:h-80 bg-gradient-to-r from-[#1B5BB5] via-dp-red to-[#1B5BB5] rounded-3xl relative flex items-center justify-center shadow-[inset_0_10px_20px_rgba(0,0,0,0.5)] overflow-hidden">
                 <div className="absolute top-0 w-full h-8 bg-gray-300 opacity-20"></div>
-                <div className="[writing-mode:vertical-rl] rotate-180 text-white font-display font-black text-6xl opacity-10 tracking-tighter absolute left-2">DR PEPPER</div>
+                <div className="[writing-mode:vertical-rl] rotate-180 text-white font-display font-black text-6xl opacity-10 tracking-tighter absolute left-2">PEPSI</div>
                 <div className="text-center relative z-10 drop-shadow-xl">
-                   <div className="text-5xl font-display font-black italic tracking-tighter text-white">Dr</div>
-                   <div className="text-4xl font-display font-black italic mt-[-10px] tracking-tighter text-white">Pepper</div>
+                   <div className="text-5xl font-display font-black italic tracking-tighter text-white">Pepsi</div>
                    <div className="mt-6 px-3 py-1 bg-white/20 rounded-full text-[10px] font-bold uppercase tracking-widest inline-block text-white backdrop-blur-sm border border-white/30">Original</div>
                 </div>
               </div>
@@ -84,7 +83,7 @@ export default function Home() {
             <div className="absolute bottom-[-10px] md:bottom-[-20px] left-1/2 -translate-x-1/2 md:-translate-x-0 md:left-[-40px] w-[90%] md:w-72 bg-black/60 backdrop-blur-xl border border-white/10 p-5 rounded-3xl shadow-2xl z-20">
               <h4 className="text-[10px] font-bold uppercase tracking-widest mb-4 opacity-60 text-white">Select Variation</h4>
               <div className="grid grid-cols-4 gap-3 mb-4">
-                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#711F25] border-2 border-white flex items-center justify-center cursor-pointer shadow-lg shadow-black/50 hover:scale-110 transition-transform"></div>
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#278BF5] border-2 border-white flex items-center justify-center cursor-pointer shadow-lg shadow-black/50 hover:scale-110 transition-transform"></div>
                 <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#E9D700] border-2 border-transparent hover:border-white/50 flex items-center justify-center cursor-pointer transition-all"></div>
                 <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#111111] border-2 border-transparent hover:border-white/50 flex items-center justify-center cursor-pointer transition-all"></div>
                 <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#E5B6CE] border-2 border-transparent hover:border-white/50 flex items-center justify-center cursor-pointer transition-all"></div>
@@ -125,10 +124,10 @@ export default function Home() {
         <div className="w-full overflow-x-auto pb-12 snap-x snap-mandatory scrollbar-hide">
           <div className="flex gap-8 px-4 md:px-8 w-max">
             {[
-              { name: "Original", color: "#711F25", desc: "The bold, authentic 23-flavor blend." },
+              { name: "Original", color: "#278BF5", desc: "The bold, authentic Pepsi taste." },
               { name: "Zero Sugar", color: "#111111", desc: "All the flavor, zero sugar." },
-              { name: "Cherry", color: "#8E1624", desc: "A kiss of cherry to the classic blend." },
-              { name: "Cream Soda", color: "#C69C6D", desc: "Smooth cream soda finish." },
+              { name: "Max", color: "#1B5BB5", desc: "Maximum taste, zero calories." },
+              { name: "Wild Cherry", color: "#8E1624", desc: "Cherry-infused Pepsi flavor." },
             ].map((flavor, idx) => (
               <motion.div
                 key={idx}
