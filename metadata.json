@@ -1,0 +1,8 @@
+{
+  "name": "Dr Pepper Experience",
+  "description": "A high-converting, fully responsive website for a global beverage brand, featuring interactive flavor discovery, store locator, and culture hub.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
