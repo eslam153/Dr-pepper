@@ -10,6 +10,7 @@ import Flavors from "./pages/Flavors";
 import Locator from "./pages/Locator";
 import Culture from "./pages/Culture";
 import About from "./pages/About";
+import ElementsGuide from "./pages/ElementsGuide";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="locator" element={<Locator />} />
           <Route path="culture" element={<Culture />} />
           <Route path="about" element={<About />} />
+          <Route path="guide" element={<ElementsGuide />} />
         </Route>
       </Routes>
     </BrowserRouter>
